@@ -62,10 +62,22 @@ namespace BT2
             int a;
             int b;
             string nghiem;
-            if(!int.TryParse(txthesoA.Text, out a))
+            if (txthesoA.Text == "")
+            {
+                MessageBox.Show("Không được để trống A! nhập lại");
+                txthesoA.Focus();
+                return;
+            }
+            if (!int.TryParse(txthesoA.Text, out a))
             {
                 MessageBox.Show("Hệ số a không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txthesoA.Focus();
+                return;
+            }
+            if (txthesoB.Text == "")
+            {
+                MessageBox.Show("Không được để trống B! nhập lại");
+                txthesoB.Focus();
                 return;
             }
             if (!int.TryParse(txthesoB.Text, out b))
@@ -118,6 +130,11 @@ namespace BT2
             DialogResult kq = MessageBox.Show("Thoát hay không?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (kq == DialogResult.Yes)
                 this.Close();
+        }
+
+        private void lblKQ_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

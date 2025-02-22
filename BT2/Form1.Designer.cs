@@ -51,7 +51,7 @@ namespace BT2
             this.lblTieude.Location = new System.Drawing.Point(0, 0);
             this.lblTieude.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTieude.Name = "lblTieude";
-            this.lblTieude.Size = new System.Drawing.Size(1161, 102);
+            this.lblTieude.Size = new System.Drawing.Size(995, 102);
             this.lblTieude.TabIndex = 0;
             this.lblTieude.Text = "GIẢI PHƯƠNG TRÌNH BẬC NHẤT";
             this.lblTieude.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -60,39 +60,46 @@ namespace BT2
             // lblsoA
             // 
             this.lblsoA.AutoSize = true;
-            this.lblsoA.Location = new System.Drawing.Point(42, 192);
+            this.lblsoA.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsoA.Location = new System.Drawing.Point(67, 186);
             this.lblsoA.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblsoA.Name = "lblsoA";
-            this.lblsoA.Size = new System.Drawing.Size(86, 25);
+            this.lblsoA.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblsoA.Size = new System.Drawing.Size(109, 31);
             this.lblsoA.TabIndex = 2;
-            this.lblsoA.Text = "Hệ số a";
+            this.lblsoA.Text = "Hệ số a:";
             this.lblsoA.Click += new System.EventHandler(this.lblsoA_Click);
             // 
             // lblsoB
             // 
             this.lblsoB.AutoSize = true;
-            this.lblsoB.Location = new System.Drawing.Point(42, 248);
+            this.lblsoB.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsoB.Location = new System.Drawing.Point(67, 243);
             this.lblsoB.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblsoB.Name = "lblsoB";
-            this.lblsoB.Size = new System.Drawing.Size(86, 25);
+            this.lblsoB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblsoB.Size = new System.Drawing.Size(110, 31);
             this.lblsoB.TabIndex = 3;
-            this.lblsoB.Text = "Hệ số b";
+            this.lblsoB.Text = "Hệ số b:";
             this.lblsoB.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // lblKQ
             // 
             this.lblKQ.AutoSize = true;
-            this.lblKQ.Location = new System.Drawing.Point(42, 312);
+            this.lblKQ.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKQ.Location = new System.Drawing.Point(67, 307);
             this.lblKQ.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblKQ.Name = "lblKQ";
-            this.lblKQ.Size = new System.Drawing.Size(86, 25);
+            this.lblKQ.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblKQ.Size = new System.Drawing.Size(116, 31);
             this.lblKQ.TabIndex = 4;
-            this.lblKQ.Text = "Kết quả";
+            this.lblKQ.Text = "Kết quả:";
+            this.lblKQ.Click += new System.EventHandler(this.lblKQ_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(176, 312);
+            this.label1.Location = new System.Drawing.Point(233, 312);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 25);
@@ -103,8 +110,8 @@ namespace BT2
             // 
             this.txthesoA.Font = new System.Drawing.Font("Times New Roman", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthesoA.ForeColor = System.Drawing.Color.Red;
-            this.txthesoA.Location = new System.Drawing.Point(182, 185);
-            this.txthesoA.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txthesoA.Location = new System.Drawing.Point(239, 185);
+            this.txthesoA.Margin = new System.Windows.Forms.Padding(6);
             this.txthesoA.Name = "txthesoA";
             this.txthesoA.Size = new System.Drawing.Size(522, 32);
             this.txthesoA.TabIndex = 5;
@@ -114,8 +121,8 @@ namespace BT2
             // 
             this.txthesoB.Font = new System.Drawing.Font("Times New Roman", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthesoB.ForeColor = System.Drawing.Color.Red;
-            this.txthesoB.Location = new System.Drawing.Point(182, 242);
-            this.txthesoB.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txthesoB.Location = new System.Drawing.Point(239, 242);
+            this.txthesoB.Margin = new System.Windows.Forms.Padding(6);
             this.txthesoB.Name = "txthesoB";
             this.txthesoB.Size = new System.Drawing.Size(522, 32);
             this.txthesoB.TabIndex = 6;
@@ -125,8 +132,8 @@ namespace BT2
             // 
             this.txtKq.Font = new System.Drawing.Font("Times New Roman", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKq.ForeColor = System.Drawing.Color.Red;
-            this.txtKq.Location = new System.Drawing.Point(182, 306);
-            this.txtKq.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtKq.Location = new System.Drawing.Point(239, 306);
+            this.txtKq.Margin = new System.Windows.Forms.Padding(6);
             this.txtKq.Name = "txtKq";
             this.txtKq.Size = new System.Drawing.Size(522, 32);
             this.txtKq.TabIndex = 7;
@@ -134,11 +141,11 @@ namespace BT2
             // 
             // btnTinh
             // 
-            this.btnTinh.BackColor = System.Drawing.Color.Cyan;
-            this.btnTinh.Font = new System.Drawing.Font("Times New Roman", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTinh.BackColor = System.Drawing.Color.White;
+            this.btnTinh.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTinh.ForeColor = System.Drawing.Color.Red;
-            this.btnTinh.Location = new System.Drawing.Point(181, 392);
-            this.btnTinh.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnTinh.Location = new System.Drawing.Point(238, 392);
+            this.btnTinh.Margin = new System.Windows.Forms.Padding(6);
             this.btnTinh.Name = "btnTinh";
             this.btnTinh.Size = new System.Drawing.Size(120, 67);
             this.btnTinh.TabIndex = 8;
@@ -148,11 +155,11 @@ namespace BT2
             // 
             // btnTiep
             // 
-            this.btnTiep.BackColor = System.Drawing.Color.Cyan;
-            this.btnTiep.Font = new System.Drawing.Font("Times New Roman", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTiep.BackColor = System.Drawing.Color.White;
+            this.btnTiep.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTiep.ForeColor = System.Drawing.Color.Red;
-            this.btnTiep.Location = new System.Drawing.Point(382, 392);
-            this.btnTiep.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnTiep.Location = new System.Drawing.Point(439, 392);
+            this.btnTiep.Margin = new System.Windows.Forms.Padding(6);
             this.btnTiep.Name = "btnTiep";
             this.btnTiep.Size = new System.Drawing.Size(120, 67);
             this.btnTiep.TabIndex = 9;
@@ -162,13 +169,13 @@ namespace BT2
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.Cyan;
-            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.BackColor = System.Drawing.Color.White;
+            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.Red;
-            this.btnThoat.Location = new System.Drawing.Point(583, 392);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnThoat.Location = new System.Drawing.Point(640, 392);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(6);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(120, 67);
+            this.btnThoat.Size = new System.Drawing.Size(119, 67);
             this.btnThoat.TabIndex = 10;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -178,7 +185,7 @@ namespace BT2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1161, 755);
+            this.ClientSize = new System.Drawing.Size(995, 562);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnTiep);
             this.Controls.Add(this.btnTinh);
@@ -190,7 +197,7 @@ namespace BT2
             this.Controls.Add(this.lblsoB);
             this.Controls.Add(this.lblsoA);
             this.Controls.Add(this.lblTieude);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
